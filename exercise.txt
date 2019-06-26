@@ -1,22 +1,3 @@
-Exercise 0
-
-1. Change www.google.com to google.com, observe number of requests. Explain what happened-
-
 Exercise 1
 
-1. Change number of Threads(Users), Loops and Ramp-up period to 10. Observe results.
-
-Exercise 2
-
-1. Change request method from GET to HEAD and then DELETE.
-2. Explain results
-
-Exercise 3
-
-1. Test different types of listeners:
-    - Graph Results
-    - Aggregate Report
-
-Exercise 4
-
-1. Name Test elements mnomonically for better documentation
+Define more User Variables that you can use to parametrize plan e.g. Ramp-Up period and Number of Threads

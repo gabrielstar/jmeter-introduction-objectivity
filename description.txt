@@ -1,11 +1,8 @@
 In this part we will:
 
-Create our first load test by running requests against www.google.com
+Use HTTP Request Defaults and User Variables elements to parametrize plan.
 
-1. We will add some basic elements of a test
-    - Thread Group
-    - Sampler -> HTTP Request
-    - Listener -> View Results Tree
-
-2. We will analyze Sampler Results: Request & Response
-3. We will name test plan elements mnomonicalla for better documentation
+1. Remove DELETE Sampler
+2. Add User Defined Variables element at the top
+3. Add HTTP Request Deafults, configure URL there and remove it from Samplers
+4. Define URL and loops as User Variables and Use them with ${}
