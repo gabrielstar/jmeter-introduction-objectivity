@@ -1,0 +1,7 @@
+In this part we will:
+
++ Start Jmeter GUI
++ Walk through JMX file
++ Walk through Menu Options:
+    + Log Level
+    + Running Test Scenario from JMX File
