@@ -1,8 +1,13 @@
 In this part we will:
 
-Use HTTP Request Defaults and User Variables elements to parametrize plan.
+Explore basic Logic Controllers and Timer Controller:
 
-1. Remove DELETE Sampler
-2. Add User Defined Variables element at the top
-3. Add HTTP Request Deafults, configure URL there and remove it from Samplers
-4. Define URL and loops as User Variables and Use them with ${}
+- If Controller
+- Loop Controller
+- Constant Timer
+
+0. Start with 1 Thread
+1. Add Constant Timer controller to HEAD Request
+2. Add If Controller that performs GET only if HEAD is successful
+3. Add Loop Controller that makes the call double
+4. Timer and Number of repeated calls should be parametrized
