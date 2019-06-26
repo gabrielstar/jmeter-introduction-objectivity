@@ -1,7 +1,11 @@
 In this part we will:
 
-+ Start Jmeter GUI
-+ Walk through JMX file
-+ Walk through Menu Options:
-    + Log Level
-    + Running Test Scenario from JMX File
+Create our first load test by running requests against www.google.com
+
+1. We will add some basic elements of a test
+    - Thread Group
+    - Sampler -> HTTP Request
+    - Listener -> View Results Tree
+
+2. We will analyze Sampler Results: Request & Response
+3. We will name test plan elements mnomonicalla for better documentation
