@@ -1,6 +1,6 @@
 In this part we will:
 
-Explore basic Logic Controllers and Timer Controller:
+Look into setUp and tearDown thread groups
 
-- Create a Pre Processor to modify requested URL based on thread number
-- Create a Custom sampler usign java/groovy
+- Add setUp Thread Group and create a custom.log for for our custom sampler
+- Extend custom sampler to store in our log file request time in CSV form
