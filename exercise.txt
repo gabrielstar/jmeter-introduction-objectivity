@@ -1,6 +1,8 @@
 Exercise 1
 
-Replace Constant Timer with another Type of timer
+Define alternative URL in a variable
+Modify Pre-processor to modify URL picked based on loop iteration
+
 
 
 

@@ -2,12 +2,5 @@ In this part we will:
 
 Explore basic Logic Controllers and Timer Controller:
 
-- If Controller
-- Loop Controller
-- Constant Timer
-
-0. Start with 1 Thread
-1. Add Constant Timer controller to HEAD Request
-2. Add If Controller that performs GET only if HEAD is successful
-3. Add Loop Controller that makes the call double
-4. Timer and Number of repeated calls should be parametrized
+- Create a Pre Processor to modify requested URL based on thread number
+- Create a Custom sampler usign java/groovy
