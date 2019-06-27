@@ -1,7 +1,6 @@
 Exercise 1
 
-Define alternative URL in a variable
-Modify Pre-processor to modify URL picked based on loop iteration
+Use HTTP Requests Defaults and Cache Manager to see how will the number fo requests change as well as their time when they are enabled.
 
 
 
