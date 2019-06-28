@@ -16,17 +16,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="loops" elementType="Argument">
             <stringProp name="Argument.name">loops</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">${__P(loops,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="URL" elementType="Argument">
             <stringProp name="Argument.name">URL</stringProp>
-            <stringProp name="Argument.value">www.google.com</stringProp>
+            <stringProp name="Argument.value">${__P(URL,www.google.com)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="alternativeURL" elementType="Argument">
             <stringProp name="Argument.name">alternativeURL</stringProp>
-            <stringProp name="Argument.value">www.google.pl</stringProp>
+            <stringProp name="Argument.value">${__P(alternativeURL,www.google.pl)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="threads" elementType="Argument">
@@ -36,23 +36,18 @@
           </elementProp>
           <elementProp name="rampup" elementType="Argument">
             <stringProp name="Argument.name">rampup</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="waitCount" elementType="Argument">
-            <stringProp name="Argument.name">waitCount</stringProp>
-            <stringProp name="Argument.value">3</stringProp>
+            <stringProp name="Argument.value">${__P(rampUp,5)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="waitTime" elementType="Argument">
             <stringProp name="Argument.name">waitTime</stringProp>
-            <stringProp name="Argument.value">5000</stringProp>
+            <stringProp name="Argument.value">${__P(waitTime,5000)}</stringProp>
             <stringProp name="Argument.desc">ms</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="repeat" elementType="Argument">
             <stringProp name="Argument.name">repeat</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">${__P(repeat,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

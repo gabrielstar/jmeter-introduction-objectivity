@@ -1,7 +1,6 @@
 Exercise 1
 
 Enable all scenario variables to be passed from commandline.
-Generate report.
 
 
 
