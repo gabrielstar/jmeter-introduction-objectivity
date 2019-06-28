@@ -1,6 +1,5 @@
 In this part we will:
 
-User Lements to make scenarios more realistic:
-
-- Cache Manager
-- Download Embedded Resources
+Run jmeter tests without GUI
+See how we can pass jmeter parameters form command line and how we can set some general propeties in user.properties file
+Generate basic HTML report: https://jmeter.apache.org/usermanual/generating-dashboard.html
