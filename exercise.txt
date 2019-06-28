@@ -1,8 +1,7 @@
 Exercise 1
 
-1. See contents of log file
-2. Refactor code and find the best place for name of the logfile "custom.log"
-3. Create a tearDown Thread and transform custom.log to insert aggregate header at the end of the log
+
+1. In the tearDown Thread transform custom.log to insert aggregate header at the end of the log
 
 
 
