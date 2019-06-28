@@ -1,10 +1,11 @@
 Exercise 1
 
 Use HTTP Requests Defaults and Cache Manager to see how will the number fo requests change as well as their time when they are enabled.
+Modify elements in cache to 2. Has anything changed?
 
 
-Exercise 2
+Exercise 2 - Stress Test
 
-Run Stress tests setting threads and rampu to some high values. Are you getting errors? Why ?
+Run Stress tests setting threads and rampup to some high values. Are you getting errors? Why ? Should google handle it ?
 
 

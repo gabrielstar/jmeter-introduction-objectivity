@@ -1,6 +1,6 @@
 In this part we will:
 
-User Lements to make scenarios more realistic:
+Use additional elements to make scenarios more realistic:
 
 - Cache Manager
 - Download Embedded Resources
