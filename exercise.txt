@@ -1,6 +1,12 @@
-Exercise 1
+Exercise
 
-Replace Constant Timer with another Type of timer
+Use variables for all hard-coded values
+
+Exercise 2
+
+Replace Constant Timer with another Type of Timer
+
+
 
 
 
