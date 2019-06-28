@@ -1,6 +1,7 @@
 In this part we will:
 
-Explore basic Logic Controllers and Timer Controller:
+Explore Preogrammable elements of JMETER Test Plan:
 
-- Create a Pre Processor to modify requested URL based on thread number
 - Create a Custom sampler usign java/groovy
+- Create a Pre Processor to modify requested URL based on thread number
+
