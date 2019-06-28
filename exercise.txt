@@ -1,6 +1,6 @@
 Exercise 0
 
-1. Change www.google.com to google.com, observe number of requests. Explain what happened-
+1. Change www.google.com to google.com, observe number of requests. Explain what happened
 
 Exercise 1
 
@@ -8,15 +8,16 @@ Exercise 1
 
 Exercise 2
 
-1. Change request method from GET to HEAD and then DELETE.
-2. Explain results
+1. Add additional HTTP Samplers for  HEAD and DELETE.
+2. Run & Explain results
 
 Exercise 3
 
-1. Test different types of listeners:
-    - Graph Results
+1. Add another listener:
     - Aggregate Report
 
 Exercise 4
 
-1. Name Test elements mnomonically for better documentation
+1. Name Test elements mnomonically for better documentation e.g.
+ Plan: HTTP DELETE request for www.google.com
+ Samplers: HTTP GET Request for www.google.com
