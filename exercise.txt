@@ -1,3 +1,6 @@
 Exercise 1
 
-Define more User Variables that you can use to parametrize plan e.g. Ramp-Up period and Number of Threads
+Define more User Variables that you can use to parametrize plan:
+ - ramp-Up period
+ - Number of Threads
+ - loops

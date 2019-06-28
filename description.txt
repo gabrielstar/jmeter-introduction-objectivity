@@ -3,6 +3,6 @@ In this part we will:
 Use HTTP Request Defaults and User Variables elements to parametrize plan.
 
 1. Remove DELETE Sampler
-2. Add User Defined Variables element at the top
-3. Add HTTP Request Deafults, configure URL there and remove it from Samplers
+2. Add User Defined Variables element to parametrize plan
+3. Add HTTP Request Defults to reduce repetitions, configure URL there and remove it from Samplers
 4. Define URL and loops as User Variables and Use them with ${}
