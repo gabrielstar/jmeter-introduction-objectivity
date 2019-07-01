@@ -80,7 +80,7 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="HTTP HEAD Request for www.google.com" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="TF: HTTP HEAD Request for www.google.com" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="113394086">Google Test Plan for JMETER Introduction Curse</stringProp>
