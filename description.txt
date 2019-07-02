@@ -1,5 +1,5 @@
 In this part we will:
 
-Run jmeter tests without GUI
-See how we can pass jmeter parameters form command line and how we can set some general properties in user.properties file
-Generate basic HTML report: https://jmeter.apache.org/usermanual/generating-dashboard.html
+Use Xpath extractors to process response contant and check if google page contains link to GMAIL.
+We will turn it into assertion next.
+

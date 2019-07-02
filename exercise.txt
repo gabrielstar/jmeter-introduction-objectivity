@@ -1,6 +1,6 @@
 Exercise 1
 
-Enable all scenario variables to be passed from commandline.
+Remove Logging GMAIL service and XPATH extractor and instead insert XPATH Assertion to test we are indeed on good site
 
 
 
