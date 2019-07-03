@@ -1,6 +1,6 @@
 Exercise 1
 
-Enable all scenario variables to be passed from commandline.
+Find out what should be the minimum HTTP Cache Maneger : max elements in cache, so that requests to google are minimized in the scenario ?
 
 
 
