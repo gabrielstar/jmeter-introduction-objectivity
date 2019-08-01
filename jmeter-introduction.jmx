@@ -16,38 +16,43 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="loops" elementType="Argument">
             <stringProp name="Argument.name">loops</stringProp>
-            <stringProp name="Argument.value">${__P(loops,2)}</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="URL" elementType="Argument">
             <stringProp name="Argument.name">URL</stringProp>
-            <stringProp name="Argument.value">${__P(URL,www.google.com)}</stringProp>
+            <stringProp name="Argument.value">www.google.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="alternativeURL" elementType="Argument">
             <stringProp name="Argument.name">alternativeURL</stringProp>
-            <stringProp name="Argument.value">${__P(alternativeURL,www.google.pl)}</stringProp>
+            <stringProp name="Argument.value">www.google.pl</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="threads" elementType="Argument">
             <stringProp name="Argument.name">threads</stringProp>
-            <stringProp name="Argument.value">${__P(threads,2)}</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="rampup" elementType="Argument">
             <stringProp name="Argument.name">rampup</stringProp>
-            <stringProp name="Argument.value">${__P(rampUp,5)}</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="waitCount" elementType="Argument">
+            <stringProp name="Argument.name">waitCount</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="waitTime" elementType="Argument">
             <stringProp name="Argument.name">waitTime</stringProp>
-            <stringProp name="Argument.value">${__P(waitTime,5000)}</stringProp>
+            <stringProp name="Argument.value">5000</stringProp>
             <stringProp name="Argument.desc">ms</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="repeat" elementType="Argument">
             <stringProp name="Argument.name">repeat</stringProp>
-            <stringProp name="Argument.value">${__P(repeat,2)}</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -62,7 +67,6 @@
         <stringProp name="HTTPSampler.protocol"></stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
-        <boolProp name="HTTPSampler.image_parser">true</boolProp>
         <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
         <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
@@ -118,7 +122,7 @@ log.write(&quot;Request, Time&quot;) //header</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="TF:HTTP HEAD Request for www.google.com" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="TF: HTTP HEAD Request for www.google.com" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="113394086">Google Test Plan for JMETER Introduction Curse</stringProp>
@@ -152,7 +156,6 @@ log.write(&quot;Request, Time&quot;) //header</stringProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
               <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -174,13 +177,14 @@ if( (threadNum % 2) == 0 ){
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PreProcessor>
               <hashTree/>
-              <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check Gmail Link with XPATH" enabled="true">
+              <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
                 <boolProp name="XPath.negate">false</boolProp>
-                <stringProp name="XPath.xpath">//a[contains(@href,&apos;mail.google.com&apos;)]</stringProp>
+                <stringProp name="XPath.xpath">//a[contains(@href,&apos;mail.google.&apos;)]</stringProp>
                 <boolProp name="XPath.validate">false</boolProp>
                 <boolProp name="XPath.whitespace">false</boolProp>
                 <boolProp name="XPath.tolerant">true</boolProp>
                 <boolProp name="XPath.namespace">false</boolProp>
+                <stringProp name="Assertion.scope">all</stringProp>
               </XPathAssertion>
               <hashTree/>
             </hashTree>

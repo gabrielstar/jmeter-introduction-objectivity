@@ -1,5 +1,5 @@
 In this part we will:
 
-Use Xpath extractors to process response contant and check if google page contains link to GMAIL.
+Use Xpath extractors to process response content and check if google page contains link to GMAIL.
 We will turn it into assertion next.
 
