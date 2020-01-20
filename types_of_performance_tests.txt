@@ -1,0 +1,12 @@
+Performance tests:
+
+    Load
+    Volume
+    Stress
+    Soak
+    Capacity
+    Spike/Burst
+
+ Requirements:
+    Non Functional (Performance) Requirements
+    Performance goals
