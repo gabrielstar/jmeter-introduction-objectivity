@@ -1,0 +1,21 @@
+Types:
+
+Test Plan
+Thread Group
+Config Element
+Pre Processor
+Request
+Post Processor
+Listener
+
+Order:
+
+
+
+
+Jmeter will re-order elements before execution:
+
+
+Exercise:
+
+One colleague to create a plan using all above elements. Another to explain the order.
