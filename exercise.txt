@@ -1,10 +1,14 @@
-Exercise
+Exercise 1 - Refactor
 
-Use variables for all hard-coded values
+Use User Defined Variables  for all hard-coded values
 
 Exercise 2
 
-Replace Constant Timer with another Type of Timer
+Replace Constant Timer with another Type of Timer. Verify Scope of Timer by placing it in different places.
+
+Exercise 3:
+
+Can you place some of Samplers in Test Fragment ?
 
 
 

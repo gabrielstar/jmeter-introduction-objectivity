@@ -1,0 +1,32 @@
+Logic Controller/Sampler
+            Logic Controller - controls flow very much like in programming languages with if, for, while, ...
+            Sampler -  sampler does the work e.g. sends HTTP request, JDBC request, ..
+
+IF controller - performs actions underneath if logical condition is true. We can evaluate expression by default in JS but we can use other langauges here two
+    Examples of expressions:
+
+        With variable expression unchecked (JS is executed):
+
+            JS: ${JMeterThread.last_sample_ok} - returns true, executes if last sample in execution chain was OK
+            JS: "${loops}"=="2" - evaluates to true
+            JS: "${performIf}" or ${performIf}, Given performIf is set to "true"
+            JS: var a = function(){ return true;}; a(); - anonymous function in JS
+            JS: var a = function() {return "${loops}"==="2";};a(); - plain JS executed
+
+            You can verify your conditions in chrome.console.
+
+        With Variable Expression Checked - use groovy for more complex stuff, expression must return true/false:
+
+            Groovy: ${__groovy("${loops}"=="2")} , with Variable Expression checked
+            Groovy: ${__groovy(${loops} as int==2)}, alternative
+
+        When you toggle option you will see how your expression is evaluated. For complex ones I strongly recommend groovy.
+
+        From docs:
+
+        If you uncheck Interpret Condition as Variable Expression?, If Controller will internally use javascript to evaluate the condition which has a performance penalty that can be very big and make your test less scalable.
+
+LOOP controller - allows to repeat action
+Constant Timer - Timer introduces wait time before  Samplers. Scope is the most important to remember here. When on the same level they get applied to all samplers. When attached they apply only to
+                 mother sampler.
+

@@ -1,0 +1,8 @@
+This trio allows to re-use common behaviours (elements)
+
+Config:
+    Test Fragment - repository of elements/behaviours
+    Simple Controller - a bin for element, visible to
+
+Module Controller - is used in your script flow to reference a behaviour from Test Fragment, it can only referemce Controllers not Samplers hence we
+                    need to embed our samplers in Controllers first
