@@ -10,3 +10,4 @@ In this part we will:
     + Stopping test - abrupt stop
     + Validate Option
     + Help Button
+    + +/- button
