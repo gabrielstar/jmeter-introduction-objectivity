@@ -3,5 +3,10 @@ In this part we will:
 + Start Jmeter GUI
 + Walk through JMX file
 + Walk through Menu Options:
-    + Log Level
+    + JMeter Log
+    + Jmeter Log Levels
     + Running Test Scenario from JMX File
+    + Shutdown - graceful stop
+    + Stopping test - abrupt stop
+    + Validate Option
+    + Help Button

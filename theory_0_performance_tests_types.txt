@@ -1,0 +1,28 @@
+"Performance tests" have a very wide meaning. In a nutshell here is some nomenclature to help you understand common wording.
+
+Let us assume we have a web app:
+
+LOAD TESTS - we run test at the specified "load" level. e.g. 1 run at load level 100 users/minute and second at load of 200 users/minute. It is generic and usually we probe a few load levels.
+PEAK LOAD TESTS - Load test at the level of maximum load  we expect application to manage that actually happens in real life. E.g. we know in December we might see 1000 users per minute (or we did see)
+STRESS TESTS - we test at the load level much higher than normal e.g. Peak Load Test
+SOAK TESTS - a long running test with focus on resource usage and backend effects, performed at normal load level
+CAPACITY TESTS - a test that aims at finding MAXIMUM CAPACITY so load level at which non functional requirements are met
+SPIKE TESTS - short burst of load beyond maximum capacity
+
+Example for our web app:
+
+NFRs 1: 95% Page Response Times < 4s
+NFR 2: Maximum number of users per minute 180.
+
+Test Case: Visitors of Main Page
+    Load definition:
+        Number of Visitors of Main Page in 1 minute interval
+
+Test Execution Strategy:
+
+    1) We run 3 LOAD TESTSs at Load level 100,200,300 users to establish MAXIMUM CAPACITY is around 200 users/minute. We got first insight into the app.
+    2) We run detailed CAPACITY TEST based on earlier results to establish MAXIMUM_CAPACITY is at 220 users/Minute, meeting NFR1.
+    3) We run PEAK LOAD TEST at load level 180 (NFR2) to find out 95% of responses are below 3s.
+    4) We ran a few SPIKE TESTS at load of 230 and 250 to find out application can handle that without throwing errors. Response times are noted below 6s.
+    5) We ran STRESS tests at increasing load of up to 500 users per minute to find out application performance times go above 10s with 350 users and with 400 it start to produce errors.
+    6) At the end we ran a SOAK tests at the load of 120 users per minute, for 8h to find out that after 2h application throws OOM because of bad memory management.

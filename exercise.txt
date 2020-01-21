@@ -4,7 +4,8 @@ Exercise 1
 2. Check for logfile entries
 3. Modify log level to ERROR. How did log file content change?
 4. Do the same using Ctrl+S,E,R keys
+
 Exercise 2
 
 1. Open jmeter-introduction.jmx file
-2. What type of file is that?
+2. What information can you get out of it?
