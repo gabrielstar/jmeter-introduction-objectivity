@@ -1,0 +1,15 @@
+Here come JMETER Test Plan elements and their base order of execution.
+
+Test Plan - is a place holder for what follows next, has useful options for configuring Thread Groups
+    Thread Group -  contains a number of things doing something in parallel e.g. Users/Samplers
+        Config Elements - provide configuration and helper elements e.g. HTTP Cookie Manager/HTTP Header Manager
+        Pre-processors - allow to change requests before we fire them
+        Timer - adds wait time
+        Lgic Controller/Sampler
+            Logic Controller - controls flow very much like in programming languages with if, for, while, ...
+            Sampler -  sampler does the work e.g. sends HTTP request, JDBC request, ...
+        Post-processors - can analyze response of the request
+        Assertions - verify results
+        Listener - allow to visualize/summarize results
+
+This order of execution is enforced even if you place those elements in JMETER not according to the order.
