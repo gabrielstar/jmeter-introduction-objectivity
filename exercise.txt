@@ -1,6 +1,11 @@
 Exercise 1
 
 Define more User Variables that you can use to parametrize plan:
- - ramp-Up period
+
+ - Ramp-Up period
  - Number of Threads
- - loops
+ - Loops
+
+ Exercise 2
+
+ Place them inside Test Plan section
