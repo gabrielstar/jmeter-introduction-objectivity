@@ -85,8 +85,8 @@
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="113394086">Google Test Plan for JMETER Introduction Curse</stringProp>
-            <stringProp name="170071582">Test Fragment</stringProp>
-            <stringProp name="-667079646">HTTP Requests category</stringProp>
+            <stringProp name="-1948168983">Thread Group</stringProp>
+            <stringProp name="-1591803190">Simple Controller</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
