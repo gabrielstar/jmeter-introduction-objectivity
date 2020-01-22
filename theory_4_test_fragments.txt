@@ -1,8 +1,9 @@
-This trio allows to re-use common behaviours (elements)
+This trio allows to re-use common behaviours (elements) with Config & Use parts
 
-Config:
+Config part:
     Test Fragment - repository of elements/behaviours
     Simple Controller - a bin for element, visible to
 
-Module Controller - is used in your script flow to reference a behaviour from Test Fragment, it can only reference Controllers
+Use part:
+    Module Controller - is used in your script flow to reference a behaviour from Test Fragment, it can only reference Controllers
                     (most often Simple Controllers) not Samplers hence we need to embed our samplers in Controllers first
