@@ -1,0 +1,18 @@
+How do modern browsers work ? https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+
+ - Usually browsers use around 2-6 threads to fetch resources in parallel.
+ - Usually the cache static resources subject to HTTP Cache Control Headers e.g. Expires
+
+Best Practices: Where to find them:
+
+    https://jmeter.apache.org/usermanual/best-practices.html (let us briefly discuss)
+
+Understanding some of them requires some experience with JMETER so we can discuss them in the course.
+
+On top of that Gabriel's additions (do not have to be true):
+
+    - Treat jmeter tests as code, manage them as code
+    - Perform Code Reviews and peer DEMOs
+    - Do not try to be performance tester, try to be good engineer then you become good performance tester
+    - Understand back-end
+    - Always think big: remote executions, CI/CD/CT integration
