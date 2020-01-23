@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.0 r1840935">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Google Test Plan for JMETER Introduction Curse" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -76,6 +76,7 @@
       <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">false</boolProp>
         <boolProp name="useExpires">true</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="true">
@@ -89,6 +90,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </SetupThreadGroup>
       <hashTree>
         <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Properties" enabled="true">
@@ -120,6 +122,7 @@ log.write(&quot;Request, Time&quot;) //header</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="TF: HTTP HEAD Request for www.google.com" enabled="true">
@@ -177,7 +180,7 @@ if( (threadNum % 2) == 0 ){
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PreProcessor>
               <hashTree/>
-              <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
+              <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Assert GMAIL link is present" enabled="true">
                 <boolProp name="XPath.negate">false</boolProp>
                 <stringProp name="XPath.xpath">//a[contains(@href,&apos;mail.google.&apos;)]</stringProp>
                 <boolProp name="XPath.validate">false</boolProp>
@@ -186,6 +189,36 @@ if( (threadNum % 2) == 0 ){
                 <boolProp name="XPath.namespace">false</boolProp>
                 <stringProp name="Assertion.scope">all</stringProp>
               </XPathAssertion>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract text from GMAIL link with XPATH" enabled="false">
+                <stringProp name="XPathExtractor.default">not_extracted</stringProp>
+                <stringProp name="XPathExtractor.refname">gmail_extractor</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">//a[contains(@href,&apos;mail.google.&apos;)]</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">true</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Extract text from GMAIL link with Boundary" enabled="true">
+                <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+                <stringProp name="BoundaryExtractor.refname">gmail_extractor</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">tab=wm&quot;&gt;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&lt;</stringProp>
+                <stringProp name="BoundaryExtractor.default">not_extracted_by_boundary</stringProp>
+                <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+                <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </BoundaryExtractor>
+              <hashTree/>
+              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Display Extracted Text from GMAIL Link" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">log.info(&quot;Is gmail link there:&quot; + vars.get(&quot;gmail_extractor&quot;))</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223PostProcessor>
               <hashTree/>
             </hashTree>
             <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="HTTP Custom Sampler GET Request for www.google" enabled="true">
@@ -215,6 +248,7 @@ new File(props.get(&quot;logfile&quot;)).append(&quot;\n${URL},${endRequest-star
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </PostThreadGroup>
       <hashTree>
         <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Insert Summary Results" enabled="true">

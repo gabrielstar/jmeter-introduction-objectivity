@@ -2,5 +2,7 @@ Exercise 1
 
 Remove Logging GMAIL service and XPATH extractor and instead insert XPATH Assertion to test we are indeed on good site
 
+Exercise 2
 
+Chang XPath extractor into Boundary Extractor
 

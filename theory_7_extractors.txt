@@ -1,0 +1,15 @@
+Extractors:
+
+    Are most often used to extract parameters that need to be passed to subsequent requests for instance because of:
+
+    https://pl.wikipedia.org/wiki/Cross-site_request_forgery
+    https://www.tinfoilsecurity.com/blog/what-is-cross-site-request-forgery-csrf
+
+    Often we use them in assertions too.
+
+    Most commonly used extractors:
+
+    XpathExtractor
+    CSSExtractor
+    Regular Expression Extractor
+    NEW (v4.0): Boundary Extractor - simplification of Regular Expression Extractor
