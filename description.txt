@@ -1,7 +1,10 @@
 In this part we will:
 
-Explore Preogrammable elements of JMETER Test Plan:
+Explore Programmable elements of JMETER Test Plan:
 
-- Create a Custom sampler usign java/groovy
-- Create a Pre Processor to modify requested URL based on thread number
+Coders:
+    - Create a Custom sampler usign java/groovy (JSR223 compliant)
+    - Create a Pre Processor to modify requested URL based on thread number
 
+Non-coders:
+    - Apply a User Parameters pre-processor to override a variable
