@@ -1,0 +1,6 @@
+Your first place to go is jmeter.log or jmeter-server.log if you exectuee distributed tests.
+Alternatively you can:
+
+- Mark Element in the Tree. Enable Debog on individual element in Help -> Enable Debug. Some elements are verbose, some are not at all.
+    You can execute this on XPATH assertion element to verify.
+- In Your Thread Group add Debug Sampler and View Results Underneath.

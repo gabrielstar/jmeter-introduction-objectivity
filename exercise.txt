@@ -1,6 +1,7 @@
 Exercise 1
 
-Find out what should be the minimum HTTP Cache Maneger : max elements in cache, so that requests to google are minimized in the scenario ?
+Find out what should be the minimum HTTP Cache Manager : max elements in cache, so that requests to google are minimized in the scenario ?
+Enable debug for this element to see if elements are being cached.
 
 
 
