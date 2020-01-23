@@ -1,8 +1,23 @@
-Exercise 1
+Exercise 1 (medium)
 
 
 1. In the tearDown Thread transform custom.log to insert aggregate header at the end of the log
 
+
+Exercise 2 (hard):
+
+Define a CSV file with two columns service,domain:
+
+gooogle, pl
+google, ru
+google, es
+
+Load it up in threadGroup and verify each of addresses responds. If not kill the tests. Use
+
+    CSV Data Set Config
+    HTTP Request
+    Response Assertion
+    JSR233 Sampler: ctx.getEngine().stopTest()
 
 
 

@@ -1,0 +1,13 @@
+Often Used Plan Structure looks like this:
+
+    Test Plan:
+        setUpThreadGroup (preparation, data loading, initializations, warm up for db, register users, get oauth tokens, generate random test data..)
+        Main ThreadGroups (actual work)
+        tearDown (summaries, closing resources, removing temp files, ...)
+
+
+Test Driven in Jmeter:
+
+    One can use CSV Data Config to pre-load data from CSV files into JMeter variables.
+    Those variables will be picked by Thread Group in round robin fashion so if you have 3 variables and 10 threads
+    then Thread 1 gets 1 CSV row, THread 2 gets 2 CSV row, Thread 4 gets 1 CSV row etc ...
