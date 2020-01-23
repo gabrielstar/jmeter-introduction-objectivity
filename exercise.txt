@@ -2,5 +2,13 @@ Exercise 1
 
 Enable all scenario variables to be passed from commandline.
 
+Exercise 2:
 
+Define user.properties file and define defaults for your plan there. Run script with defauls from commandline.
+Analyze if user.properties were accepted in the log file.
+
+Exercise 3:
+
+Update run scripts with all available parameters it accepts to "document" your performance script. Update script
+so that html report is generated. Study CSV file. Study HTML report.
 

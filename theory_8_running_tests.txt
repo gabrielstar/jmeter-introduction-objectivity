@@ -1,0 +1,48 @@
+JMETER GUI is only used to develop scripts not to run them to draw conclusions.
+Whn we run jmeter in non-ui mode we need to externalize jmeter script parameters so that we can provide them from the commandline.
+
+    Examples:
+
+    That is the simplest possible run (change your paths please):
+
+    "C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat" ^
+     -n -t "jmeter-introduction.jmx"
+
+     That run provides parameters (we still need to do some work in script for that to work)
+
+     "C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat" ^
+      -n -Jthreads=5 -t "jmeter-introduction.jmx"
+
+    That run includes report generation (default format is CSV):
+
+    "C:\Users\gstarcze\dev tools\apache-jmeter-5.0\apache-jmeter-5.0\bin\jmeter.bat" ^
+     -n -Jthreads=2  -t "jmeter-introduction.jmx" -l jmeter-introduction.csv -e -o jmeter-introduction-html
+
+Parameters
+
+    There are parameters that are defined in jmeter.properties, if a user wants to overwrite them then best practice
+    is to create user.properties file in the place where we run tests and override them in that file.
+
+    e.g.
+
+    user.properties
+        jmeter.save.saveservice.output_format=xml
+
+    Then you can override thaose user defaults with commandline e.g. -Jjmeter.save.saveservice.output_format=csv
+    Summing up order is:
+
+    jmeter.properties->user.properties->command line
+
+Hint:
+    You can also place in that file your scripts variables e.g.
+        jmeter.save.saveservice.output_format=csv
+        threads=10
+        whatever=WHATEVER
+
+
+Remote execution is beyond scope of this training.
+You can watch my video on https://www.youtube.com/watch?v=BZ2Zm-SDGjI to see how you can run jmeter with
+    - maven
+    - docker
+    - taurus
+On Jenkins to enable CI/CD.
