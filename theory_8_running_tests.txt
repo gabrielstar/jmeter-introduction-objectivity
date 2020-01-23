@@ -34,6 +34,7 @@ Parameters
     jmeter.properties->user.properties->command line
 
 Hint:
+    Execute jmeter -n in /bin folder to see available options
     You can also place in that file your scripts variables e.g.
         jmeter.save.saveservice.output_format=csv
         threads=10
@@ -46,3 +47,4 @@ You can watch my video on https://www.youtube.com/watch?v=BZ2Zm-SDGjI to see how
     - docker
     - taurus
 On Jenkins to enable CI/CD.
+See here if zou want to run it from coe .e.g java: https://www.blazemeter.com/blog/5-ways-launch-jmeter-test-without-using-jmeter-gui/
