@@ -155,6 +155,18 @@ if( (threadNum % 2) == 0 ){
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PreProcessor>
               <hashTree/>
+              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="Pick domain via User Parameters" enabled="false">
+                <collectionProp name="UserParameters.names">
+                  <stringProp name="84303">URL</stringProp>
+                </collectionProp>
+                <collectionProp name="UserParameters.thread_values">
+                  <collectionProp name="1535303585">
+                    <stringProp name="838876292">${alternativeURL}</stringProp>
+                  </collectionProp>
+                </collectionProp>
+                <boolProp name="UserParameters.per_iteration">false</boolProp>
+              </UserParameters>
+              <hashTree/>
             </hashTree>
             <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="HTTP Custom Sampler GET Request for www.google" enabled="true">
               <stringProp name="cacheKey">true</stringProp>

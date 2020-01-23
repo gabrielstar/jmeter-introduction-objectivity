@@ -1,7 +1,12 @@
-Exercise 1
+Exercise 1 (coders)
 
-Define alternative URL in a variable
+Define alternative URL in a variable or property
 Modify Pre-processor to modify URL picked based on loop iteration
+
+Exercise 1 (non-coders)
+
+Define alternativeURL in a variable
+Use User Parameters pre-processor to override URL before the request
 
 
 
