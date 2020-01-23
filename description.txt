@@ -1,5 +1,0 @@
-In this part we will:
-
-Enable debug mode for selected elements and analyze log
-Use Debug Sampler to see values of variables and properties
-Look where jmeter log file is.
