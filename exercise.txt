@@ -1,7 +1,7 @@
 Exercise 1
 
 Use HTTP Requests Defaults and Cache Manager to see how will the number fo requests change as well as their time when they are enabled.
-Modify elements in cache to 2. Has anything changed?
+Modify elements in cache to 1. Has anything changed?
 
 Hint: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires , what -1 means ?
 
