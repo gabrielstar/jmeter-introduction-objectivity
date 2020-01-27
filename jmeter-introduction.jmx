@@ -193,7 +193,7 @@ if( (threadNum % 2) == 0 ){
               <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract text from GMAIL link with XPATH" enabled="false">
                 <stringProp name="XPathExtractor.default">not_extracted</stringProp>
                 <stringProp name="XPathExtractor.refname">gmail_extractor</stringProp>
-                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">1</stringProp>
                 <stringProp name="XPathExtractor.xpathQuery">//a[contains(@href,&apos;mail.google.&apos;)]</stringProp>
                 <boolProp name="XPathExtractor.validate">false</boolProp>
                 <boolProp name="XPathExtractor.tolerant">true</boolProp>
