@@ -85,8 +85,8 @@
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="113394086">Google Test Plan for JMETER Introduction Curse</stringProp>
-            <stringProp name="-1948168983">Thread Group</stringProp>
-            <stringProp name="-1591803190">Simple Controller</stringProp>
+            <stringProp name="170071582">Test Fragment</stringProp>
+            <stringProp name="-1575086797">HTTP HEAD Request for www.google.com</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
@@ -236,7 +236,7 @@
       <hashTree/>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment" enabled="false"/>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="HTTP Requests category" enabled="true">
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="HTTP HEAD Request for www.google.com" enabled="true">
           <stringProp name="TestPlan.comments">Short User Think Time</stringProp>
         </GenericController>
         <hashTree>
