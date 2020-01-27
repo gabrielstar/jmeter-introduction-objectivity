@@ -1,6 +1,6 @@
 Remember:
     Config Elements - provide configuration and helper elements. Most commonly used are
-        HTTP Cookie Manager - allows to manage cookie suatomatically
+        HTTP Cookie Manager - allows to manage cookies automatically
         HTTP Cache Manager - allows to cache elements like a real browser does
         HTTP Request Defaults - allows to specify settings in one place that are inherited down
         User Defined Variables
