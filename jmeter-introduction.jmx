@@ -281,6 +281,7 @@ new File(props.get(&quot;logfile&quot;)).append(&quot;\n${URL},${endRequest-star
             <stringProp name="script">//do some log transformation here
 //insert total request time at the end
 def logfile = new File(props.get(&quot;logfile&quot;))
+log.info &quot;${logfile.readLines()}&quot;
 def results = logfile.readLines().findAll{
 	line -&gt; !line.contains(&quot;Request&quot;)
 }.sum{ 

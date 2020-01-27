@@ -14,9 +14,9 @@ google, es
 
 Load it up in threadGroup and verify each of addresses responds. If not kill the tests. Use
 
-    CSV Data Set Config
+    CSV Data Set Config iwth columns: service, domains
     HTTP Request
-    Response Assertion
+    Response Assertion: Response == 200
     JSR233 Sampler: ctx.getEngine().stopTest()
 
 
