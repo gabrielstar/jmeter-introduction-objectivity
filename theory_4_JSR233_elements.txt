@@ -17,7 +17,7 @@ What do we need to know to develop a scripted elements for JMeter ?
 - JSR233 (from https://www.openhab.org/docs/configuration/jsr223.html):
 
      JSR223 (spec) is a standard scripting API for Java Virtual Machine (JVM) languages. The JVM languages provide varying levels of support for the JSR223 API and interoperability with the Java runtime.
-     Currently the following languages are known to work well for openHAB scripting: Jython (Python on the JVM), Nashorn Javascript (ECMAScript implementation included in JDK8 through 10, deprecated in 11), and Apache Groovy (JVM scripting language).
+     Currently the following languages are known to work well : Jython (Python on the JVM), Nashorn Javascript (ECMAScript implementation included in JDK8 through 10, deprecated in 11), and Apache Groovy (JVM scripting language).
 
      (From https://en.wikipedia.org/wiki/List_of_JVM_languages)
 
