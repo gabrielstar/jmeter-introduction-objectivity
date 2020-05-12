@@ -9,3 +9,7 @@ Exercise 2
 
 1. Open jmeter-introduction.jmx file
 2. What information can you get out of it?
+
+Exercise 3
+
+Install plugin manager https://jmeter-plugins.org/wiki/PluginsManager/ by putting it in lib/ext folder.
